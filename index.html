@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in/Sign-up form</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btn-wrapper">
+        <button class="toggle-btn" onclick="signin()">Sign In</button>
+        <button class="toggle-btn" onclick="signup()">Sign Up</button>
+        <div class="indicator"></div>
+      </div>
+
+      <form class="signin-form">
+        <input class="input" type="text" placeholder="Email Address" required />
+        <input
+          class="input"
+          type="password"
+          placeholder="Enter Password"
+          required
+        />
+        <div class="check-box">
+          <input type="checkbox" id="check" />
+          <label for="check">Remember me</label>
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+
+      <form class="signup-form">
+        <input class="input" type="text" placeholder="Full Name" required />
+        <input
+          class="input"
+          type="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          class="input"
+          type="password"
+          placeholder="Enter Password"
+          required
+        />
+        <input
+          class="input"
+          type="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <div class="check-box">
+          <input type="checkbox" id="check2" />
+          <label for="check2">I agree to Terms & Conditions</label>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
